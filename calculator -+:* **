@@ -1,0 +1,35 @@
+def input_number(which):
+    print(f" Input {which} number : ", end="")
+    return int(input())
+
+a=input_number("first")
+b=input_number("second")
+operator=input("choose the operation : ")
+
+def div (a,b):
+    print (a/b)
+
+def mul (a,b):
+    print (a*b)
+
+def add (a,b):
+    print (a+b)
+
+def sub (a,b):
+    print (a-b)
+
+def pow (a, b):
+    print(a**b)
+
+if operator=="/":
+    div(a, b)
+elif operator=="*":
+    mul(a,b)
+elif operator=="-":
+    sub(a, b)
+elif operator=="+":
+    add(a, b)
+elif operator=="**":
+    pow(a, b)
+else:
+    print ("Operation not supported")
